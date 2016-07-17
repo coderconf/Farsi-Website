@@ -36,6 +36,12 @@ Use this command to set up a blank Foundation for Sites project with this templa
 foundation new --framework sites --template zurb
 ```
 
+To create compressed, production-ready assets: 
+
+```bash
+foundation build
+```
+
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
 ### Manual Setup
