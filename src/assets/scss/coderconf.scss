@@ -1,0 +1,328 @@
+// Main Style
+// For all pages
+
+.color-red {color: #D60000;}
+.color-green {color: $color-green;}
+.badge {margin: 0 0.4rem;}
+.font-bold {font-weight: bold;}
+td {font-size: 0.75rem;}
+td:nth-child(2) {text-align: left;}
+.ltrr {direction: ltr !important; text-align: right;}
+.expanded .row {max-width: $global-width;}
+
+a {transition:all 0.1s ease-in-out;}
+
+.clear-space {margin-bottom: 1rem;}
+
+
+.lang {
+    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    left:0;
+    display: inline-block;
+    padding: 2px 5px 0px;
+    margin: 25px 20px;
+        a{
+            color: darken(#3987a2, 20%);
+        }
+    }
+
+@for $i from 1 through 8 {
+    .padding-tb-#{$i} {
+        padding-top: $i+rem;
+        padding-bottom: $i+rem;
+    }    
+    .padding-t-#{$i} {
+        padding-top: $i+rem;
+    }    
+    .padding-b-#{$i} {
+        padding-bottom: $i+rem;
+    }    
+    .padding-r-#{$i} {
+        padding-right: $i+rem;
+    }    
+    .padding-l-#{$i} {
+        padding-left: $i+rem;
+    }    
+    .padding-rl-#{$i} {
+        padding-right: $i+rem;
+        padding-left: $i+rem;
+    }    
+    .padding-#{$i} {
+        padding: $i+rem;
+    }
+    .margin-tb-#{$i} {
+        margin-top: $i+rem;
+        margin-bottom: $i+rem;
+    }    
+    .margin-t-#{$i} {
+        margin-top: $i+rem;
+    }    
+    .margin-b-#{$i} {
+        margin-bottom: $i+rem;
+    }    
+    .margin-r-#{$i} {
+        margin-right: $i+rem;
+    }    
+    .margin-l-#{$i} {
+        margin-left: $i+rem;
+    }    
+    .margin-rl-#{$i} {
+        margin-right: $i+rem;
+        margin-left: $i+rem;
+    }    
+    .margin-#{$i} {
+        margin: $i+rem;
+    }
+
+}
+
+.padding-off {padding:0;}
+.margin-off {margin:0;}
+
+
+// Header Style 
+.plan-one {background-color: $high-light-gray;}
+
+.bg-white {background-color: #FDFDFD;}
+
+.coderconf {
+
+    background: #3987a2;
+    background: -moz-linear-gradient(top, #3987a2 0%, #3987a2 46%, #3d9bbd 73%, #6bcff5 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #3987a2), color-stop(46%, #3987a2), color-stop(73%, #3d9bbd), color-stop(100%, #6bcff5));
+    background: -webkit-linear-gradient(top, #3987a2 0%, #3987a2 46%, #3d9bbd 73%, #6bcff5 100%);
+    background: -o-linear-gradient(top, #3987a2 0%, #3987a2 46%, #3d9bbd 73%, #6bcff5 100%);
+    background: -ms-linear-gradient(top, #3987a2 0%, #3987a2 46%, #3d9bbd 73%, #6bcff5 100%);
+    background: linear-gradient(to bottom, #3987a2 0%, #3987a2 46%, #3d9bbd 73%, #6bcff5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3987a2', endColorstr='#6bcff5', GradientType=0 );
+
+    &:after {
+
+            background: url(../img/coderconf.png) top center no-repeat;
+            background-size: auto 100%;
+            content: " ";
+            display: block;
+            min-height: 800px;
+
+    }
+}
+
+.section-end {
+    background-color: transparent;
+    &.after-header {
+        path {
+            fill: #6bcff5;
+            stroke: #6bcff5;
+        }
+    }
+    &.after-date-time {
+        path {
+            fill: #FDFDFD;
+            stroke: #FDFDFD;
+        }
+
+    }
+    &.after-enddd {
+        path {
+            fill: $high-light-gray;
+            stroke: $high-light-gray;
+        }
+
+    }
+}
+
+h1.conf-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.conf-date{
+    h2 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+.register {
+    padding-top:1rem;
+    .button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.7rem 4rem;
+    }
+    .early-bird {
+        font-size: 1.5rem;
+        small {font-size: 0.8rem;}
+    }
+    .late {
+        font-size: 0.7rem;
+        color: #666;
+        font-weight: bold;
+    }
+}
+
+
+
+
+#juror {
+    .columns {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        transition:all 0.2s ease-in-out;
+        &:hover {padding-top: 0.6rem; transition:all 0.2s ease-in-out;}
+                a {
+            color: #065063;
+            &:hover {
+                color: darken(#065063, 10);
+            }
+        }
+    }
+    .juror-title {
+        margin-bottom: 2rem;
+    }
+    .juror-name {
+        margin-top: 0.4rem;
+        font-size: 1.2rem;
+    }    
+    img {
+        border: 3px dashed #999;
+        width: 80%;
+        padding:0.3rem;
+        border-radius: 100%;
+        height: auto;
+    }
+}
+
+.sponsor {
+    .columns {
+        padding-bottom: 2rem;
+    }
+}
+
+.media-sponsor {
+    .columns {
+        padding-bottom: 2rem;
+        // img {max-width:60%;}
+    }
+}
+
+.master{
+        a {
+            color: #065063;
+            &:hover {color: darken(#065063, 10);}
+        }
+        img {
+        border: 3px dashed #999;
+        width: 100%;
+        padding:0.3rem;
+        border-radius: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+#conf-panel {background-color: $high-light-gray;}
+.conf-panel {
+    background-color: transparent;
+    &.before {
+        path {
+            fill: #FDFDFD;
+            stroke: #FDFDFD;
+        }
+    }
+    &.after {
+        path {
+            fill: $high-light-gray;
+            stroke: $high-light-gray;
+        }
+    }
+}
+
+
+
+
+@for $i from 1 through 8 {
+    .font-size-#{$i} {
+        font-size: $i+rem;
+        color: $text-gray;
+        font-weight: 300;
+    }    
+
+}
+
+
+.article-list {
+    background-color: $high-light-gray;
+    border-top: 1px solid darken($high-light-gray, 5%);
+    border-bottom: 1px solid darken($high-light-gray, 5%);
+}
+
+.address-area {
+
+    background-color: $high-light-gray;
+}
+
+#map {
+    min-height: 200px;
+}
+
+// Footer Style 
+.skyline {
+    background-color: $high-light-gray;
+    margin: 0;
+}
+
+.coderconf-reg-list {
+    text-align: right;
+    img {margin: 1px;}
+}
+
+footer {
+    background-color: #065063;
+    color: $fullwidth-background;
+
+    h3 {font-size:1.2rem;}
+
+    @mixin soical-icon($tb-background) {
+        background-color:$tb-background;
+        color: #FFF;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        padding:8px;
+        font-size:2rem;
+        margin: 1rem;
+        &:hover {background-color:lighten($tb-background, 10);}
+    }
+
+    a.socicon[href*="https://facebook.com"] {@include soical-icon(#505BFF);}
+    a.socicon[href*="https://twitter.com"] {@include soical-icon(#77C7F7);}
+    a.socicon[href*="https://telegram.me"] {@include soical-icon(#50B7FF);}
+    a.socicon[href*="https://instagram.com"] {@include soical-icon(#FD0069);}
+    a.socicon[href*="https://github.com"] {@include soical-icon(#FF7E34);}
+    a.socicon[href*="http://www.google.com"] {@include soical-icon(#F6102F);}
+    a.socicon[href*="tel:"] {
+        @include soical-icon(#517983);
+        img {vertical-align: initial;}
+    }
+
+
+    .copy-right {
+        background-color: darken(#065063, 10%);
+        font-weight: 300;
+        font-size: 0.7rem;
+        a {
+            color: $color-green;
+            &:hover {color: lighten($color-green, 10%);}
+        }
+    }
+
+}
+
