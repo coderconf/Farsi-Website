@@ -257,11 +257,33 @@ h1.conf-title {
 
 }
 
-
 .article-list {
     background-color: $high-light-gray;
     border-top: 1px solid darken($high-light-gray, 5%);
     border-bottom: 1px solid darken($high-light-gray, 5%);
+}
+
+.confirmed-article {
+     p {
+        margin-bottom: 0;
+    }
+    .article-info {padding-right:0.3rem;}
+    small {
+        &.article-tag {
+            width:100%;
+            text-align: center;
+            padding-top:0.1rem;
+            color: $high-light-gray;
+            display: block;
+            &.PHP {background-color: #6082BB;}
+            &.Other {background-color: $dark-gray;}
+            &.html-css {background-color: #E44D26;}
+            &.Python {background-color:#FFFBD6 ; color: #3974A4; }
+            &.JavaScript {background-color: #F9DC3C; color: #222;}
+            &.Java {background-color: #FF2403;}
+        }
+        &.article-author {font-weight: bold;}
+    }
 }
 
 .address-area {
