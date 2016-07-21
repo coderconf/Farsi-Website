@@ -36,7 +36,7 @@
     "emailhash": "b30bd1b9c9f141b79f76d7846337bdb0"
     },
     {
-    "articlename": "مایکروسرویس ها و معرفی Zend Expressive",
+    "articlename": "PSR-7 و middleware-ها و معرفی Zend Expressive",
     "author": "میلاد عربی",
     "tag": "PHP",
     "emailhash": "0c12a649e9996053c8a0951aa824452b"
@@ -54,13 +54,13 @@
     "emailhash": "f399e25d0e4af6b595ea38fa37b42dc5"
     },
     {
-    "articlename": "معرفی جاوا و دوستانش و رابطه جاوا با مهندسی نرم افزار و چرا نباید از آن استفاده کرد؟",
+    "articlename": "تاریک و روشنی ها در جاوا",
     "author": "امیرحسین جلال حسینی",
     "tag": "Java",
     "emailhash": "3c7995666f74909e1a98e0d2a24b1f94"
     },
     {
-    "articlename": "خودکار سازی بررسی نفوذ پذیری نرم افزار های تحت فریم ورکzend در برابر حملهxss به وسیله codeception",
+    "articlename": "خودکار سازی بررسی نفوذ پذیری نرم افزار های تحت فریم ورک zend",
     "author": "سیمین تقوی",
     "tag": "PHP",
     "emailhash": "97165a8d73577af24de4276a0dedcbd3"

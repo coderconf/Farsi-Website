@@ -142,11 +142,11 @@ $(document).foundation();
       var out = "";
       var i;
       for(i = 0; i < arr.data.length; i++) {
-          out += '<img src="https://gravatar.com/avatar/' + arr.data[i].email_md5 + '?s=60&d=mm"'
+          out += '<img src="https://gravatar.com/avatar/' + arr.data[i].email_md5 + '?s=36&d=mm"'
           +' alt="'+ arr.data[i].first_name + ' ' + arr.data[i].last_name +'"'
           +' title="'+ arr.data[i].first_name + ' ' + arr.data[i].last_name +'">';
       }
-      out += '<a href="https://evand.ir/events/coderconf" target="_blank"><img src="http://coderconf.org/fa/assets/img/join.jpg" ></a>';
+      out += '<a href="https://evand.ir/events/coderconf" target="_blank"><img src="http://coderconf.org/fa/assets/img/join.jpg" width="36" height="36"></a>';
       document.getElementById("coderconf-reg").innerHTML = out;
   }
 
