@@ -186,8 +186,7 @@ $(document).foundation();
               +'<div class="columns small-2">'
                 +'<img src="https://gravatar.com/avatar/' + arr[i].emailhash + '?s=80&amp;d=mm" alt="' + arr[i].author + '" title="' + arr[i].author + '"><br><small class="article-tag ' + arr[i].tag + '">' + arr[i].tag + '</small> </div>'
               +'<div class="columns small-10 article-info">'
-                +'<small class="article-author">' + arr[i].author + '</small><p>' + arr[i].articlename + '</p>'
-              +'</div>'
+                +'<small class="article-author">' + arr[i].author + '</small><p>' + arr[i].articlename + '</p></div>'
           +'</div>'
         +'</div>';
         }

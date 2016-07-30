@@ -4,7 +4,7 @@
 .color-red {color: #D60000;}
 .color-green {color: $color-green;}
 .badge {margin: 0 0.4rem;}
-.font-bold {font-weight: bold;}
+.font-bold, strong {font-weight: bold;}
 td {font-size: 0.75rem;}
 td:nth-child(2) {text-align: left;}
 .ltrr {direction: ltr !important; text-align: right;}
@@ -26,6 +26,19 @@ a {transition:all 0.1s ease-in-out;}
             color: darken(#3987a2, 20%);
         }
     }
+
+@for $i from 1 through 10 {
+    .img-#{$i}0 {width: $i*10+%; max-width: $i*10+%;}
+
+    @include breakpoint(large) {
+        .img-#{$i}0 {width: $i*12+%; max-width: $i*12+%;}
+    }    
+
+    @include breakpoint(medium down) {
+        .img-#{$i}0 {width: $i*10+%; max-width: $i*10+%;}
+    }    
+
+}
 
 @for $i from 1 through 8 {
     .padding-tb-#{$i} {
@@ -227,8 +240,10 @@ h1.conf-title {
 
 
 
-
-#conf-panel {background-color: $high-light-gray;}
+$conf-panel-gray: #EBEBEB;
+#conf-panel {
+    background-color: $conf-panel-gray;
+}
 .conf-panel {
     background-color: transparent;
     &.before {
@@ -239,8 +254,8 @@ h1.conf-title {
     }
     &.after {
         path {
-            fill: $high-light-gray;
-            stroke: $high-light-gray;
+            fill: $conf-panel-gray;
+            stroke: $conf-panel-gray;
         }
     }
 }
@@ -306,23 +321,26 @@ h1.conf-title {
     img {margin: 1px;}
 }
 
+    @mixin soical-icon($tb-background, $icon-width-height: 48px, $icon-font-size: 2rem) {
+        background-color:$tb-background;
+        color: #FFF;
+        display: inline-block;
+        width: $icon-width-height;
+        height: $icon-width-height;
+        padding:$icon-width-height/6;
+        font-size:$icon-font-size;
+        margin: 0 $icon-font-size/4 0 0;
+        &:hover {background-color:lighten($tb-background, 10);}
+    }
+
+
+
+
 footer {
     background-color: #065063;
     color: $fullwidth-background;
 
     h3 {font-size:1.2rem;}
-
-    @mixin soical-icon($tb-background) {
-        background-color:$tb-background;
-        color: #FFF;
-        display: inline-block;
-        width: 48px;
-        height: 48px;
-        padding:8px;
-        font-size:2rem;
-        margin: 1rem;
-        &:hover {background-color:lighten($tb-background, 10);}
-    }
 
     a.socicon[href*="https://facebook.com"] {@include soical-icon(#505BFF);}
     a.socicon[href*="https://twitter.com"] {@include soical-icon(#77C7F7);}
@@ -348,3 +366,219 @@ footer {
 
 }
 
+
+
+$timeline: #FEFEFE;
+$timeline-workshop: #F3F3ED;
+$timeline-network: #BFE9D5;
+
+div.chronolgy {
+      width: 800px;
+  min-width: 800px;
+  margin: 2rem auto 0 auto;
+
+}
+
+
+
+ul#chronolgy {
+  position: relative;
+  list-style: none;
+  margin:0;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background: #3385bd;
+    }
+    .time {
+        display: block;
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+        background: white;
+        border: 1px solid #3385bd;
+        text-align: center;
+        line-height: 4rem;
+        color: #3385bd;
+        font-weight: bold;
+        margin: 0 auto 1rem;
+        font-size: 0.7rem;
+        position: relative;
+        &:nth-last-child(1) {
+          letter-spacing: 0px;
+          margin-bottom: 0px;
+          font-size: 1.5rem;
+        }
+    }
+    .clear {
+      height: 25px;
+      float: none;
+      clear: both;
+    }
+}
+
+ul#chronolgy li {
+  position: relative;
+  width: 360px;
+  background: $timeline;
+  vertical-align: middle;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 10px;
+  color: #222;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: right;
+    div.location {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: #f3f3f3;
+        font-size: 0.7rem;
+        color: #333;
+        padding: 0 0.3rem;
+    }    
+    div.minute {
+        position: absolute;
+        bottom: -25px;
+        right: 0px;
+        background: #dadada;
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: #444;
+        padding: 0 0.3rem;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: normal;
+      a.socicon[href*="https://twitter.com"] {@include soical-icon(#77C7F7, 22px, 1rem);}
+    }
+
+    &:after {
+      content: '';
+      left: -47px;
+      top: 18px;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #3385bd;
+      background: #ffda20;
+      position: absolute;
+      border-radius: 50%;
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+      -webkit-animation: bounceIn 500ms 700ms forwards;
+      animation: bounceIn 500ms 700ms forwards;
+    }
+    &:hover:after {
+      background: #3385bd;
+    }
+    
+    &:before {
+          content: '';
+          position: absolute;
+          top: 15px;
+          left: -12px;
+          width: 0;
+          height: 0;
+          border: 0 solid transparent;
+          border-top-width: 10px;
+          border-bottom-width: 10px;
+          border-right: 12px solid $timeline;
+          -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+    }
+
+    @mixin goleft-panel($timeline-color) {
+
+        float: left;
+        clear: left;
+        -webkit-animation: fadeInRight 750ms;
+        animation: fadeInRight 750ms;
+        background: $timeline-color;
+        &:before {
+          top: 15px;
+          content: '';
+          position: absolute;
+          right: -12px;
+          width: 0;
+          height: 0;
+          border: 0 solid transparent;
+          border-bottom-width: 10px;
+          border-top-width: 10px;
+          border-left: 12px solid $timeline-color;
+          -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+         }
+         &:after {
+          right: -47px;
+          top: 18px;
+         }
+    }
+
+
+    &.workshop {
+        @include goleft-panel($timeline-workshop);
+    }
+    &.network {
+        @include goleft-panel($timeline-network);
+    }
+
+}
+
+
+
+@media only screen and (max-width: 799px) {
+  div.chronolgy {
+    width: inherit;
+    min-width: initial;
+    margin: 2rem auto 0 auto;
+  }
+  ul#chronolgy:before {
+    right: 40px;
+  }
+  ul#chronolgy .time {
+    margin: 10px;
+  }
+
+  ul#chronolgy li {
+    float: right!important;
+    clear: right!important;
+    -webkit-animation: fadeInRight 750ms!important;
+    animation: fadeInRight 750ms!important;
+    margin-right: 70px;
+    width: 80%;
+    &:after {
+    right: -35px!important;
+    }
+    .minute:before {display: none;}
+
+    &:nth-of-type(n):before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left: 12px solid $timeline;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    }
+    &.workshop:nth-of-type(n):before {border-left: 12px solid $timeline-workshop !important; border-right:none;}
+    &.network:nth-of-type(n):before {border-left: 12px solid $timeline-network !important; border-right:none;}
+
+  }
+
+}
