@@ -461,6 +461,9 @@ ul#chronolgy li {
       line-height: 20px;
       font-weight: normal;
       a.socicon[href*="linkedin.com"] {@include soical-icon(#1B86BC, 18px, 0.7rem);}
+      a.socicon[href*="twitter.com"] {@include soical-icon(#00aced, 18px, 0.7rem);}
+      a.socicon[href*="github.com"] {@include soical-icon(#FF7E34, 18px, 0.7rem);}
+      a.socicon[href*="github.com"] {@include soical-icon(#FF7E34, 18px, 0.7rem);}
     }
 
     &:after {
