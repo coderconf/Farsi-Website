@@ -433,7 +433,6 @@ ul#chronolgy li {
   padding: 10px;
   color: #222;
   vertical-align: middle;
-  cursor: pointer;
   text-align: right;
     div.location {
         position: absolute;
@@ -461,7 +460,7 @@ ul#chronolgy li {
       font-size: 14px;
       line-height: 20px;
       font-weight: normal;
-      a.socicon[href*="https://twitter.com"] {@include soical-icon(#77C7F7, 22px, 1rem);}
+      a.socicon[href*="linkedin.com"] {@include soical-icon(#1B86BC, 18px, 0.7rem);}
     }
 
     &:after {
