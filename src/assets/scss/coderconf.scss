@@ -12,6 +12,19 @@ td:nth-child(2) {text-align: left;}
 
 a {transition:all 0.1s ease-in-out;}
 
+    @mixin soical-icon($tb-background, $icon-width-height: 48px, $icon-font-size: 2rem) {
+        background-color:$tb-background;
+        color: #FFF;
+        display: inline-block;
+        width: $icon-width-height;
+        height: $icon-width-height;
+        padding:$icon-width-height/6;
+        font-size:$icon-font-size;
+        margin: 0 $icon-font-size/4 0 0;
+        &:hover {background-color:lighten($tb-background, 10);}
+    }
+
+
 .clear-space {margin-bottom: 1rem;}
 
 
@@ -229,13 +242,13 @@ h1.conf-title {
             color: #065063;
             &:hover {color: darken(#065063, 10);}
         }
+        p:last-child {line-height: inherit;}
         img {
-        border: 3px dashed #999;
-        width: 100%;
         padding:0.3rem;
-        border-radius: 100%;
         height: auto;
-    }
+        float: left;
+        }
+        a.socicon[href*="linkedin.com"] {@include soical-icon(#1B86BC, 18px, 0.7rem);}
 }
 
 
@@ -321,17 +334,6 @@ $conf-panel-gray: #EBEBEB;
     img {margin: 1px;}
 }
 
-    @mixin soical-icon($tb-background, $icon-width-height: 48px, $icon-font-size: 2rem) {
-        background-color:$tb-background;
-        color: #FFF;
-        display: inline-block;
-        width: $icon-width-height;
-        height: $icon-width-height;
-        padding:$icon-width-height/6;
-        font-size:$icon-font-size;
-        margin: 0 $icon-font-size/4 0 0;
-        &:hover {background-color:lighten($tb-background, 10);}
-    }
 
 
 
@@ -395,23 +397,23 @@ ul#chronolgy {
       background: #3385bd;
     }
     .time {
-        display: block;
-        width: 64px;
-        height: 64px;
-        border-radius: 50px;
-        background: white;
-        border: 1px solid #3385bd;
-        text-align: center;
-        line-height: 4rem;
-        color: #3385bd;
-        font-weight: bold;
-        margin: 0 auto 1rem;
-        font-size: 0.7rem;
-        position: relative;
+      display: block;
+      width: 120px;
+      height: 30px;
+      border-radius: 5px;
+      background: white;
+      border: 1px solid #3385bd;
+      text-align: center;
+      line-height: 2rem;
+      color: #3385bd;
+      font-weight: bold;
+      margin: 0 auto 1rem;
+      font-size: 0.7rem;
+      position: relative;
         &:nth-last-child(1) {
           letter-spacing: 0px;
           margin-bottom: 0px;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
     }
     .clear {
@@ -422,6 +424,7 @@ ul#chronolgy {
 }
 
 ul#chronolgy li {
+  float: right;
   position: relative;
   width: 360px;
   background: $timeline;
@@ -468,7 +471,7 @@ ul#chronolgy li {
 
     &:after {
       content: '';
-      left: -47px;
+      left: -48px;
       top: 18px;
       width: 15px;
       height: 15px;
@@ -482,7 +485,7 @@ ul#chronolgy li {
       animation: bounceIn 500ms 700ms forwards;
     }
     &:hover:after {
-      background: #3385bd;
+      // background: #3385bd;
     }
     
     &:before {
@@ -503,7 +506,6 @@ ul#chronolgy li {
     @mixin goleft-panel($timeline-color) {
 
         float: left;
-        clear: left;
         -webkit-animation: fadeInRight 750ms;
         animation: fadeInRight 750ms;
         background: $timeline-color;
@@ -584,3 +586,40 @@ ul#chronolgy li {
   }
 
 }
+
+.conf-article {
+  .columns {
+    margin: 0.2rem 0 0 0.2rem;
+    text-align: center;
+    .article-author {
+      font-size: 0.6rem;
+      font-weight: bold;
+    }
+  }
+}
+
+#mlb2-2832063 * {
+  text-align: right !important;
+  input {
+      margin-bottom: 5px !important;
+  }
+}
+#mlb2-2832063 .subscribe-form {
+  padding: 0 20px !important;
+}
+
+#mlb2-2832063 .subscribe-form .form-section .form-group {
+    margin-bottom: 5px !important;
+
+}
+#mlb2-2832063.ml-subscribe-form .form-group .form-control {
+  font-family: IRANSans-web !important;
+}
+#mlb2-2832063 .subscribe-form .form-section.mb10 h4 {
+  font-family: IRANSans-web !important;
+  font-size: 1.9375rem  !important;
+}
+#mlb2-2832063 .ml-block-success, #mlb2-2832063 form.ml-block-form {
+    width: 90% !important;
+}
+

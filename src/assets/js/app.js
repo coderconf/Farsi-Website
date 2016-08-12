@@ -36,13 +36,13 @@ $(document).foundation();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             var myArr = JSON.parse(xmlhttp.responseText);
-            gooyaSites(myArr);
+            confirmedArticle(myArr);
         }
     };
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 
-    function gooyaSites(arr) {
+    function confirmedArticle(arr) {
         var out = "";
         var i;
         for(i = 0; i<arr.length; i++) {
@@ -61,7 +61,7 @@ $(document).foundation();
 
           out += '<div class="row small-collapse medium-collapse large-collapse confirmed-article">'
               +'<div class="columns small-2">'
-                +'<img src="https://gravatar.com/avatar/' + arr[i].emailhash + '?s=80&amp;d=mm" alt="' + arr[i].author + '" title="' + arr[i].author + '"><br><small class="article-tag ' + arr[i].tag + '">' + arr[i].tag + '</small> </div>'
+              +'<img src="' + arr[i].avatar + '" alt="' + arr[i].author + '" title="' + arr[i].author + '" width="80" height="80"><br><small class="article-tag ' + arr[i].tag + '">' + arr[i].tag + '</small> </div>'
               +'<div class="columns small-10 article-info">'
                 +'<small class="article-author">' + arr[i].author + '</small><p>' + arr[i].articlename + '</p></div>'
           +'</div>'

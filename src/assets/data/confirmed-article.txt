@@ -3,102 +3,108 @@
     "articlename": "JavaScript of Today",
     "author": "محمد جهانی",
     "tag": "JavaScript",
-    "emailhash": "e78a6074533496ae57c01179e322aad8"
+    "avatar": "https://gravatar.com/avatar/e78a6074533496ae57c01179e322aad8?s=80&amp;d=mm"
     },
     {
     "articlename": "ضرورت آموزش برنامه نویسی به کودکان",
     "author": "بهزاد مرادی",
     "tag": "Other",
-    "emailhash": "6b84fb0725f030e618bba6c7aa2db675"
+    "avatar": "assets/img/Speaker/behzadMoradi.jpg"
     },
     {
     "articlename": "in-memory Caching by Redis",
     "author": "محمدرضا گلستان",
     "tag": "PHP",
-    "emailhash": "1d74741e8236609487a3aa0f22b3921b"
+    "avatar": "https://gravatar.com/avatar/1d74741e8236609487a3aa0f22b3921b?s=80&amp;d=mm"
     },
     {
     "articlename": "متدولوژی‌های توسعه فرانت‌اند",
     "author": "آرش منطقی",
     "tag": "html-css",
-    "emailhash": "e4fa00af8a86c330cdde6d122817ec2c"
+    "avatar": "assets/img/Speaker/arashManteghi.jpg"
     },
     {
     "articlename": "ابزارهای اینترنتی مبتنی بر پایتون در آموزش کنترل",
     "author": "صالح خواجه دلویی",
     "tag": "Python",
-    "emailhash": "683f1a0b5ac4c637e420e680bd791909"
+    "avatar": "https://gravatar.com/avatar/683f1a0b5ac4c637e420e680bd791909?s=80&amp;d=mm"
     },
     {
     "articlename": "استفاده از شبکه عصبی مصنوعی (یادگیری ماشین) در پی‌اچ‌پی",
     "author": "علا عالم فلکی",
     "tag": "PHP",
-    "emailhash": "b30bd1b9c9f141b79f76d7846337bdb0"
+    "avatar": "assets/img/Speaker/falaki.jpg"
     },
     {
     "articlename": "PSR-7 و middleware-ها و معرفی Zend Expressive",
     "author": "میلاد عربی",
     "tag": "PHP",
-    "emailhash": "0c12a649e9996053c8a0951aa824452b"
+    "avatar": "https://gravatar.com/avatar/0c12a649e9996053c8a0951aa824452b?s=80&amp;d=mm"
     },
     {
     "articlename": "لاراول محبوب تر از همیشه",
     "author": "محمد گیتی پسند",
     "tag": "PHP",
-    "emailhash": "cefb1e7635945e8723d7b37db461295e"
+    "avatar": "https://gravatar.com/avatar/cefb1e7635945e8723d7b37db461295e?s=80&amp;d=mm"
     },
     {
     "articlename": "استفاده از CSS counters برای استایل المان های افزایشی مانند لیست li",
     "author": "میثم زندی",
     "tag": "html-css",
-    "emailhash": "f399e25d0e4af6b595ea38fa37b42dc5"
+    "avatar": "assets/img/Speaker/zandi.jpg"
     },
     {
     "articlename": "تاریک و روشنی ها در جاوا",
     "author": "امیرحسین جلال حسینی",
     "tag": "Java",
-    "emailhash": "3c7995666f74909e1a98e0d2a24b1f94"
+    "avatar": "assets/img/Speaker/AmirhosseinHosseini.jpg"
     },
     {
     "articlename": "خودکار سازی بررسی نفوذ پذیری نرم افزار های تحت فریم ورک zend",
     "author": "سیمین تقوی",
     "tag": "PHP",
-    "emailhash": "97165a8d73577af24de4276a0dedcbd3"
+    "avatar": "https://gravatar.com/avatar/97165a8d73577af24de4276a0dedcbd3?s=80&amp;d=mm"
     },
     {
     "articlename": "phpDocumentor و مستندسازی در PHP",
     "author": "افشین طالبی",
     "tag": "PHP",
-    "emailhash": "a37a4cb658cfc0e5029e874d46c59e18"
+    "avatar": "https://gravatar.com/avatar/a37a4cb658cfc0e5029e874d46c59e18?s=80&amp;d=mm"
     },
     {
     "articlename": "مقایسه فریم ورک های Laravel و Phalcon",
     "author": "ناصر شرافتی‌نیا",
     "tag": "PHP",
-    "emailhash": "2d9e3216af734c3d4f751d14fef3c506"
+    "avatar": "https://gravatar.com/avatar/2d9e3216af734c3d4f751d14fef3c506?s=80&amp;d=mm"
     },
     {
     "articlename": "تحقیق و بررسی استفاده از فرمت تصویری SVG",
     "author": "بهنود اقبالی",
     "tag": "Other",
-    "emailhash": "05a6869c2c93e784b6ba6406cc4ab462"
+    "avatar": "https://gravatar.com/avatar/05a6869c2c93e784b6ba6406cc4ab462?s=80&amp;d=mm"
+    },
+    {
+    "articlename": "کافکا، ابزاری جهت پردازش ‌Big Data",
+    "author": "علی خاندانی",
+    "tag": "Other",
+    "avatar": "assets/img/Speaker/khandani.jpg"
     },
     {
     "articlename": "گذشته، حال و آینده CSS Preprocessor‌ و ابزارهای خودکار سازی",
     "author": "پیام صادری",
     "tag": "html-css",
-    "emailhash": "66301fdf101f6c1b3ed0543138a7cd9e"
+    "avatar": "https://saderi.com/me.jpg"
     },
     {
     "articlename": "ضد الگو ها و مدل ضعف",
     "author": "علیرضا رحمانی خلیلی",
     "tag": "PHP",
-    "emailhash": "a591fa4f52a472a477b980050ee94f02"
+    "avatar": "https://gravatar.com/avatar/a591fa4f52a472a477b980050ee94f02?s=80&amp;d=mm"
     },
     {
     "articlename": "راه های حفاظت از سورس کدهای php",
     "author": "رزاق شهیدی",
     "tag": "PHP",
-    "emailhash": "79e3dce8037d1800e851b2ff8a22832d"
+    "avatar": "https://gravatar.com/avatar/79e3dce8037d1800e851b2ff8a22832d?s=80&amp;d=mm"
     }
 ]
